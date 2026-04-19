@@ -441,10 +441,11 @@
           <div class="card">
             <h3>Send us a message</h3>
 
-            <form action="https://formsubmit.co/casevoice.ai@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="New message from casevoice.ai contact form">
-              <input type="hidden" name="_captcha" value="true">
-              <input type="hidden" name="_template" value="table">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="af40dfe7-9cca-4715-9a04-b375619f05a9">
+              <input type="hidden" name="subject" value="New message from casevoice.ai">
+              <input type="hidden" name="from_name" value="casevoice.ai contact form">
+              <input type="checkbox" name="botcheck" style="display:none">
 
               <label style="display:block;margin-bottom:12px;font-size:18px;">Name *</label>
               <input class="field" type="text" name="name" required placeholder="Your name">
@@ -452,10 +453,10 @@
               <label style="display:block;margin-bottom:12px;font-size:18px;">Email *</label>
               <input class="field" type="email" name="email" required placeholder="your@email.com">
 
-              <label style="display:block;margin-bottom:12px;font-size:18px;">Message</label>
-              <textarea class="field" name="message" placeholder="Write your message..."></textarea>
+              <label style="display:block;margin-bottom:12px;font-size:18px;">Message *</label>
+              <textarea class="field" name="message" required placeholder="Write your message..."></textarea>
 
-              <div style="margin:10px 0; color:var(--text-secondary); font-size:13px;">CAPTCHA is enabled by the form service for spam protection.</div>
+              <div style="margin:10px 0; color:var(--text-secondary); font-size:13px;">Protected by Web3Forms spam filtering.</div>
               <button class="btn" type="submit">Send Message</button>
             </form>
           </div>
